@@ -150,7 +150,7 @@ canvas{
 
 <!-- START SCREEN -->
 <div id="startScreen">
-  <h1>Please Enter Your Name Cutie 🎇</h1>
+  <h1>Please Enter Your Name 🎇</h1>
   <p>Press your screen to start fireworks</p>
   <input id="nameInput" placeholder="Enter Her Name..." />
   <button id="startBtn">Start Surprise 🎆</button>
@@ -164,7 +164,7 @@ canvas{
 <canvas id="fireworks"></canvas>
 
 <!-- MUSIC -->
-<audio id="music" src="music.mp3" loop></audio>
+<audio id="music" src="sound-2.mp3" loop></audio>
 
 <script>
 /* ================= START ================= */
@@ -180,7 +180,7 @@ startBtn.onclick=()=>{
   if(!herName){alert("Please enter her name ❤️");return;}
   startScreen.style.display="none";
   wishBox.style.display="block";
-  typingEffect(`💖Dear ${herName},\nHappy New Year 2026 🎆\n\nMay your life shines brighter\n and lot of happiness✨\n\nWith best wishes,
+  typingEffect(`💖Dear ${herName},\n\nHappy New Year 2026 🎆\n\nMay your life shines brighter\n and lot of happiness✨\n\nWith best wishes,
 Rajdeep ✨ `);
   music.play();
   setTimeout(()=>textFirework("2026"),3500);
